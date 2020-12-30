@@ -19,45 +19,27 @@ var numerical = "0123456789"
 var specialChars = "!@#$%^&*()_+~`|}{[]\:;?><,./-='"
 
 // The alert that greets the user
-var greetings = alert("Welcome! Please click OK to get started.")
+var greetings = alert("Welcome! Please click OK to get started.");
 
 // The prompt that gets the number of characters
 var pwLength = prompt("Please enter a password length between 8 and 128 characters.")
 while (isNaN(pwLength) || pwLength <= 7 || pwLength >= 129){
-   pwLength = prompt("Please enter a number between 8 and 128.")
+ // The validation alert 
+    pwLength = alert("Please enter a number between 8 and 128.")
 }
 
-// The prompt that asks if they want lowercase letters - logic needs work
-var lowCase = prompt("Would you like to include lowercase letters? Yes/No")
-while(lowCase != "yes" || (lowCase =! "no")){
-    lowCase = prompt("Please enter yes or no.")
-}
+// The confirmation that asks about lowercase letters  
+var lowCase = confirm("Would you like to use lowercase letters?")
 
-/*
 // The prompt that asks if they want uppercase letters
-var uppCase = prompt("Would you like to include uppercase letters? Yes/No")
-while(uppCase === 'yes' || uppCase === 'no' || uppCase === 'Yes' || uppCase === 'No') {
-}
-if(uppCase !='yes' || uppCase !='no' || uppCase !='Yes' || uppCase !='No') {
-    uppCase = prompt("Please enter yes or no.")
-}
-
+var upCase = confirm("Would you like to use uppercase letters?")
 
 // The prompt that asks if they want numbers
-var numCase = prompt("Would you like to include numbers? Yes/No")
-while(numCase === 'yes' || numCase === 'no' || numCase === 'Yes' || numCase === 'No') {
-}
-if(numCase !='yes' || numCase !='no' || numCase !='Yes' || uppCase !='No') {
-    numCase = prompt("Please enter yes or no.")
-}
+var numCase = confirm("Would you like to use numbers?")
 
 // The prompt that asks if they want special characters
-var specCase = prompt("Would you like to include special characters? Yes/No")
-while(specCase === 'yes' || specCase === 'no' || specCase === ('Yes') || specCase === ('No')) {
-}
-if(specCase !='yes' || specCase !='no' || specCase !='Yes' || specCase !='No') {
-    specCase = prompt("Please enter yes or no.")
-}
+var symCase = confirm("Would you like to use special characters?")
+
 // The password generator function -- needs if statements -- saved from the old version, not working!
 /* function generatePassword() {
     var returnedPw = " "
