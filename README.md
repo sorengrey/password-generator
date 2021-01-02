@@ -2,7 +2,7 @@
 A simple password generator with prompts.
 
 ![screenshot of application](./assets/screenshot.png?raw=true "Password Generator")
-[Click here for the live website.](https://sorengrey.github.io/password-generator/)<br><br>
+[Click here for the live website.](https://sorengrey.github.io/password-generator/)<br>
 
 <p>For this assignment, the class was given some basic HTML, CSS, and Javascript to work with. The generator was not operational, and there were no prompts to guide the user. The criteria we were given was:</p>
 <ul>
