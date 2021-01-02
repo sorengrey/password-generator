@@ -53,13 +53,14 @@ while(lowCase === false && upCase === false && numCase === false && symCase === 
 var pwLength = prompt("Please enter a password length between 8 and 128 characters.")
 while (isNaN(pwLength) || pwLength <= 7 || pwLength >= 129){
  //  validation alert 
-    pwLength = alert("Please enter a number between 8 and 128.")
+    alert("Please enter a number between 8 and 128.")
+    pwLength = prompt("Please enter a password length between 8 and 128 characters.")
 }
 
 // tells the user to click the Generate Password button
 var done = alert("All finished! Click Generate Password!")
 
-// password generator function - works, but needs to stop after one click!
+// password generator function
  function generatePassword() {
     var returnedPw = ''
     for (i = 0, n = selected.length; i < pwLength; ++i) {
